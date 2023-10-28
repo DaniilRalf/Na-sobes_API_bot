@@ -1,0 +1,19 @@
+server:
+  port: 8000
+spring:
+  datasource:
+    username: na_sobes
+    password: na_sobes
+    url: jdbc:postgresql://localhost:5432/na_sobes
+    driver-class-name: org.postgresql.Driver
+  jpa:
+    properties:
+      hibernate:
+        ddl-auto: update
+    generate-ddl: true
+bot:
+  name: NaSobesBot
+  token: 6587006425:AAEJWCAN00A-kInWYBz8qgMJYmWb1xijzDg
+
+
+
