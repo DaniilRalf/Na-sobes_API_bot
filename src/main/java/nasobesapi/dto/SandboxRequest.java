@@ -5,7 +5,7 @@ import lombok.Data;
 @Data
 public class SandboxRequest {
 
-    private Integer number = null;
+    private Integer number;
     private String devSpecification;
     private String grade;
 

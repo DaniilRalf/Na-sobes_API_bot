@@ -16,8 +16,8 @@ public class SandboxModel {
     private String id;
 
     @NotNull
-    @Column(name = "numder")
-    private Integer numder;
+    @Column(name = "number")
+    private Integer number;
 
     @NotNull
     @Column(columnDefinition = "text", name = "answer")
