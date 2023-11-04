@@ -22,7 +22,7 @@ jobs:
         run: sudo apt install maven
 
       - name: 'build jar file'
-        run: mvn package
+        run: mvn package -X
 
       - name: 'show structure'
         run: ls -al
