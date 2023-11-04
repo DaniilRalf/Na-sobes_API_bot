@@ -11,9 +11,12 @@ spring:
       hibernate:
         ddl-auto: update
     generate-ddl: true
-bot:
-  name: NaSobesBot
-  token: 6587006425:AAEJWCAN00A-kInWYBz8qgMJYmWb1xijzDg
 
+
+bot:
+  name: NaSobesTestBot
+  token: 6786036914:AAEfsQTuPNOEce9XSI7CZvm8Wi6mm7wMRps
+user:
+  notactivedays: 15
 
 
