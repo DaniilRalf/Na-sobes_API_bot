@@ -58,5 +58,5 @@ jobs:
           port: '22'
           script: |
             cd ../../var/www/back/target
-            screen -m -d java -jar CryptoPulse-0.0.1-SNAPSHOT.jar
+            screen -m -d java -jar na-sobes-api-0.0.1-SNAPSHOT.jar
             ls -al
