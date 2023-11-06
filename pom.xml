@@ -14,7 +14,7 @@
     <name>na-sobes-api</name>
     <description>na-sobes-api</description>
     <properties>
-        <java.version>11</java.version>
+        <java.version>17</java.version>
         <telegram.version>6.7.0</telegram.version>
     </properties>
     <dependencies>
