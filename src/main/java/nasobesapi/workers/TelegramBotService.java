@@ -93,7 +93,7 @@ public class TelegramBotService extends TelegramLongPollingBot {
         InlineKeyboardMarkup keyboardMarkup = new InlineKeyboardMarkup();
 
         /** Создаем кнопку web_app*/
-        WebAppInfo linkForWebApi = new WebAppInfo("http://localhost:4200/" + devSpecification);
+        WebAppInfo linkForWebApi = new WebAppInfo("https://na-sobes.ru/" + devSpecification);
 
         InlineKeyboardButton webAppButton = new InlineKeyboardButton();
         webAppButton.setText("Open");
