@@ -57,6 +57,16 @@ public class TelegramBotService extends TelegramLongPollingBot {
 //                    onPulse(chatId, "");
                     onOpenWebApplication(chatId, "frontend-js");
                     break;
+                case "/frontend_react":
+//                    this.usersService.updateActivityUser(chatId);
+//                    onPulse(chatId, "");
+                    onOpenWebApplication(chatId, "frontend-react");
+                    break;
+                case "/frontend_angular":
+//                    this.usersService.updateActivityUser(chatId);
+//                    onPulse(chatId, "");
+                    onOpenWebApplication(chatId, "frontend-angular");
+                    break;
                 case "/stop":
                     break;
                 default:
@@ -67,9 +77,7 @@ public class TelegramBotService extends TelegramLongPollingBot {
     }
 
     private void onInfo(long chatId) {
-        String message = "Я рад приветствовать тебя в мире нашего развивающегося телеграм бота! \uD83E\uDD16\uD83D\uDCAC\n" +
-                "Моя основная задача - помогать тебе быть в курсе последних изменений в криптовалютной сфере. Я предоставляю информацию о стоимости криптовалют в режиме реального времени.\n" +
-                "Моя команда работает над постоянным улучшением функционала и добавлением новых возможностей, чтобы удовлетворить твои потребности и ожидания. Мы стремимся сделать использование телеграм бота легким и удобным для тебя.";
+        String message = "тестовая инфа";
         sendMessage(chatId, message);
     }
 
