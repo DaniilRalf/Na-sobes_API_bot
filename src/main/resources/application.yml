@@ -13,8 +13,8 @@ spring:
     generate-ddl: true
 
 bot:
-  name: NaSobesTestBot
-  token: 6786036914:AAEfsQTuPNOEce9XSI7CZvm8Wi6mm7wMRps
+  name: NaSobesBot
+  token: 6587006425:AAEJWCAN00A-kInWYBz8qgMJYmWb1xijzDg
 user:
   notactivedays: 15
 
