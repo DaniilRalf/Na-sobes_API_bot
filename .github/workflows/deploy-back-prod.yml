@@ -39,8 +39,12 @@ jobs:
           port: '22'
           script: |
             cd ../../var/www/back/target
-            sudo kill -9 $(sudo lsof -t -i:8000)
-            sudo rm -r *
+            if [ "$(ls -A)" ]; then
+              sudo kill -9 $(sudo lsof -t -i:8000)
+              sudo rm -r *
+            else
+              echo "No files found in the directory"
+            fi
 
       - name: 'deploy jar file'
         uses: appleboy/scp-action@v0.1.4
@@ -52,14 +56,14 @@ jobs:
           source: 'target/*.jar'
           target: '../../var/www/back'
 
-      - name: 'start-remote-command'
-        uses: appleboy/ssh-action@v0.1.10
-        with:
-          host: '31.129.99.106'
-          username: 'root'
-          password: 'pZJAsbwD&2PV'
-          port: '22'
-          script: |
-            cd ../../var/www/back/target
-            screen -m -d java -jar na-sobes-api-0.0.1-SNAPSHOT.jar
-            ls -al
+#      - name: 'start-remote-command'
+#        uses: appleboy/ssh-action@v0.1.10
+#        with:
+#          host: '31.129.99.106'
+#          username: 'root'
+#          password: 'pZJAsbwD&2PV'
+#          port: '22'
+#          script: |
+#            cd ../../var/www/back/target
+#            screen -m -d java -jar na-sobes-api-0.0.1-SNAPSHOT.jar
+#            ls -al
